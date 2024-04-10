@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>896</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>加解密测试</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Encryption</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="6" column="3">
+       <widget class="QPushButton" name="EnButton">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Encryption</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Key</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QToolButton" name="EnFileButton">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QComboBox" name="EnAlgorithm">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Caesar cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Affine cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Multilateral cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Keyword cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vigenere cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Autokey ciphertext</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Autokey plaintext</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Playfair cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Permutation cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Column permutation cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rc4 cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rsa cipher</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Plaintext</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="3">
+       <widget class="QTextEdit" name="EnPlaintext">
+        <property name="placeholderText">
+         <string>请输入待加密文本...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2" colspan="2">
+       <widget class="QTextEdit" name="Enresult">
+        <property name="placeholderText">
+         <string>显示密文中...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Encryption&lt;/p&gt;&lt;p&gt;Algorithm&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Encryption&lt;/p&gt;&lt;p&gt;Result&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLineEdit" name="EnFileline">
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>请选择文件</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2" colspan="2">
+       <widget class="QPlainTextEdit" name="EnKeytext">
+        <property name="placeholderText">
+         <string>请输入密钥...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Decryption</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Key</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ciphertext</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="DeFileline">
+        <property name="placeholderText">
+         <string>请选择文件</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPlainTextEdit" name="DeKeytext">
+        <property name="placeholderText">
+         <string>请输入密钥...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QLabel" name="label_8">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Decryption&lt;/p&gt;&lt;p&gt;Algorithm&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2" colspan="2">
+       <widget class="QComboBox" name="DeAlgorithm">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Caesar cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Affine cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Multilateral cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Keyword cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vigenere cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Autokey ciphertext</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Autokey plaintext</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Playfair cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Permutation cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Column permutation cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rc4 cipher</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rsa cipher</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="2" colspan="2">
+       <widget class="QTextEdit" name="Deresult">
+        <property name="placeholderText">
+         <string>显示解密文本中...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="DeButton">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Decryption</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QToolButton" name="DeFileButton">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Decryption&lt;/p&gt;&lt;p&gt;Result&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="2">
+       <widget class="QTextEdit" name="DePlaintext">
+        <property name="placeholderText">
+         <string>请输入密文...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
